@@ -19,6 +19,7 @@ La idea es simple: queremos poder saber si una solución utiliza ciertas herrami
 * Análisis del metamodelo, utilizando metaprogramación
 
 Por si fuera poco, este análisis requiere
+
 * que sus resultados sean comprensibles para el usuario final, en su idioma
 * que sea simple de describir
 
@@ -53,6 +54,7 @@ Por eso lo que hemos creado es un lenguaje muy simple de inspecciones: consultas
 ## Generalidades
 
 Hay algunas cosas más que tener en cuenta:
+
 * Como se aprecia en el cuadro anterior, la mayoría de las inspecciones no toman argumentos, pero algunas, como `HasUsage` requieren uno. Así, por ejemplo, la inspección de _usa el identificador en su definición a identificador foo?_ se escribe `HasUsage:foo`
 * La mayoriai de las inspecciones se ejecutan sólo si son especificadas en el ejercicio, pero algunas se ejecutan siempre (típicamente para detectar code smells). A las primeras expectativas se les dice explícitas, mientras que a las segundas, implícitas
 * Toda inspeccion puede ser negada anteponiendo `Not:`. Por ejemplo `Not:HasBinding` se debe leer como _es cierto que no existe el identificador?_
