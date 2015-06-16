@@ -12,3 +12,26 @@ La idea es simple: queremos poder saber si una solución utiliza ciertas herrami
 * Análisis del metamodelo, utilizando metaprogramación
 
 Por si fuera poco, este análisis requiere
+
+
+|Inspection|Significado|Lenguajes Soportados|
+|----------|:----------|:-------------------|
+|HasBinding|Debe existir el identificador (función, variable, método, predicado, clase, etc)|Haskell, Prolog, Gobstones|
+|HasComposition|El identificador debe usar composicion|Haskell|
+|HasComprehension|El identificador debe usar listas por comprensión|Haskell|
+|HasConditional| '%{binding} %{must} utilizar condicionales (guardas/if)'
+|HasDirectRecursion| '%{binding} %{must} emplear recursión'
+|HasGuards| '%{binding} %{must} usar guardas'
+|HasIf| '%{binding} %{must} usar if'
+|HasLambda| '%{binding} %{must} emplear expresiones lambda'
+|HasRedundantBooleanComparison| '%{binding} hace comparaciones booleanas innecesarias'
+|HasRedundantGuards| '%{binding} tiene guardas innecesarias'
+|HasRedundantIf| '%{binding} tiene ifs innecesarios'
+|HasRedundantLambda| '%{binding} tiene lambdas innecesarias'
+|HasRedundantParameter| '%{binding} tiene parámetros innecesarios (se pueden eliminar mediante point-free)'
+|HasRepeatOf| '%{binding} %{must} usar una repetición simple de %{target}'
+|HasTypeDeclaration| '%{must} existir una declaración para el sinónimo de tipo %{binding}'
+|HasTypeSignature| La firma para %{binding} %{must} ser declarada
+|HasUsage| '%{binding} %{must} utilizar %{target}'
+|HasWhile| '%{binding} %{must} utilizar repetición condicional (sentencia <i>while</i>)'
+  
