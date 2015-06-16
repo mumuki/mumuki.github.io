@@ -56,7 +56,7 @@ Por eso lo que hemos creado es un lenguaje muy simple de inspecciones: consultas
 Hay algunas cosas más que tener en cuenta:
 
 * Como se aprecia en el cuadro anterior, la mayoría de las inspecciones no toman argumentos, pero algunas, como `HasUsage` requieren uno. Así, por ejemplo, la inspección de _usa el identificador en su definición a identificador foo?_ se escribe `HasUsage:foo`
-* La mayoriai de las inspecciones se ejecutan sólo si son especificadas en el ejercicio, pero algunas se ejecutan siempre (típicamente para detectar code smells). A las primeras expectativas se les dice explícitas, mientras que a las segundas, implícitas
+* La mayoriai de las inspecciones se ejecutan sólo si son especificadas en el ejercicio, pero algunas se ejecutan siempre (típicamente para detectar code smells). A las primeras expectativas se les dice explícitas, mientras que a las segundas, implícitas. Como regla general, las expectativas de la forma `HasRedundant*` son implícitas. 
 * Toda inspeccion puede ser negada anteponiendo `Not:`. Por ejemplo `Not:HasBinding` se debe leer como _es cierto que no existe el identificador?_
 * Todo runner debe soportar recibir exectativas con inspecciones que no soporta; ante este escenario, el runner debe indicar que **se cumplió la expectativa**.
 * El lenguaje no especifica si la inspección será evaluada solo para el identificado o también para los identificadores que utiliza (inspección transitiva), y queda librado a la implementación de cada runner. Sin embargo, es posible que en el futuro se modifique el lenguaje para soportar esto. 
