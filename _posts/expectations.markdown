@@ -13,6 +13,10 @@ La idea es simple: queremos poder saber si una solución utiliza ciertas herrami
 
 Por si fuera poco, este análisis requiere
 
+Global vs Local
+Implicito vs Explicito
+Negación
+Extensiones futuras
 
 |Inspection|Significado|Lenguajes Soportados|
 |----------|:----------|:-------------------|
