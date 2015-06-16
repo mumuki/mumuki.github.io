@@ -12,30 +12,42 @@ La idea es simple: queremos poder saber si una solución utiliza ciertas herrami
 * Análisis del metamodelo, utilizando metaprogramación
 
 Por si fuera poco, este análisis requiere
+* que sus resultados sean comprensibles para el usuario final, en su idioma
+* que sea simple de describir
 
-Global vs Local
-Implicito vs Explicito
-Negación
-Extensiones futuras
+Por eso lo que hemos creado es un lenguaje muy simple de inspecciones: consultas booleanas sobre un identificador del programa (llamado `binding`. Con lo que nos queda `expectativa = (binding, inspection)`.
+
+## Inspecciones disponibles 
 
 |Inspection|Significado|Lenguajes Soportados|
 |----------|:----------|:-------------------|
-|HasBinding|Debe existir el identificador (función, variable, método, predicado, clase, etc)|Haskell, Prolog, Gobstones|
-|HasComposition|El identificador debe usar composicion|Haskell|
-|HasComprehension|El identificador debe usar listas por comprensión|Haskell|
-|HasConditional| '%{binding} %{must} utilizar condicionales (guardas/if)'
-|HasDirectRecursion| '%{binding} %{must} emplear recursión'
-|HasGuards| '%{binding} %{must} usar guardas'
-|HasIf| '%{binding} %{must} usar if'
-|HasLambda| '%{binding} %{must} emplear expresiones lambda'
-|HasRedundantBooleanComparison| '%{binding} hace comparaciones booleanas innecesarias'
-|HasRedundantGuards| '%{binding} tiene guardas innecesarias'
-|HasRedundantIf| '%{binding} tiene ifs innecesarios'
-|HasRedundantLambda| '%{binding} tiene lambdas innecesarias'
-|HasRedundantParameter| '%{binding} tiene parámetros innecesarios (se pueden eliminar mediante point-free)'
-|HasRepeatOf| '%{binding} %{must} usar una repetición simple de %{target}'
-|HasTypeDeclaration| '%{must} existir una declaración para el sinónimo de tipo %{binding}'
-|HasTypeSignature| La firma para %{binding} %{must} ser declarada
-|HasUsage| '%{binding} %{must} utilizar %{target}'
-|HasWhile| '%{binding} %{must} utilizar repetición condicional (sentencia <i>while</i>)'
+|HasBinding|Existe el identificador (función, variable, método, predicado, clase, etc)|Haskell, Prolog, Gobstones|
+|HasComposition|El identificador usa composicion|Haskell|
+|HasComprehension|El identificador usa listas por comprensión|Haskell|
+|HasConditional| El identificador debe utilizar condicionales|Haskell|
+|HasDirectRecursion| El identificador debe emplear recursión|Haskell, Prolog|
+|HasGuards| El identificador usa guardas|Haskell|
+|HasIf| El identificador usa if|Haskell|
+|HasLambda| El identificador debe emplear expresiones lambda|Haskell|
+|HasRedundantBooleanComparison| El identificador hace comparaciones booleanas innecesarias|Haskell|
+|HasRedundantGuards| El identificador tiene guardas innecesarias|Haskell|
+|HasRedundantIf| El identificador tiene ifs innecesarios|Haskell|
+|HasRedundantLambda| El identificador tiene lambdas innecesarias|Haskell|
+|HasRedundantParameter| El identificador tiene parámetros innecesarios (se pueden eliminar mediante point-free)|Haskell|
+|HasRepeatOf:_target_| El identificador usa una repetición simple de _target_ ciclos |Gobstones|
+|HasTypeDeclaration|El identificador existe y es un sinónimo de tipo|Haskell|
+|HasTypeSignature|El identificador usa firma de tipo|Haskell|
+|HasForall|El identificador usa forall|Prolog|
+|HasFindall|El identificador usa findall|Prolog|
+|HasNot|El identificador usa not|Prolog|
+|HasUsage:_target_| El identificador utiliza el identificador _target_|Haskell, Prolog, Gobstones|
+|HasWhile| El identificador utiliza repetición condicional|Gobstones|
   
+## Generalidades
+
+Hay algunas cosas más que tener en cuenta:
+* Como se aprecia en el cuadro anterior, la mayoría de las inspecciones no toman argumentos, pero algunas, como `HasUsage` requieren uno. Así, por ejemplo, la inspección de _usa el identificador en su definición a identificador foo?_ se escribe `HasUsage:foo`
+* La mayoriai de las inspecciones se ejecutan sólo si son especificadas en el ejercicio, pero algunas se ejecutan siempre (típicamente para detectar code smells). A las primeras expectativas se les dice explícitas, mientras que a las segundas, implícitas
+* Toda inspeccion puede ser negada anteponiendo `Not:`. Por ejemplo `Not:HasBinding` se debe leer como _es cierto que no existe el identificador?_
+* Todo runner debe soportar recibir exectativas con inspecciones que no soporta; ante este escenario, el runner debe indicar que **se cumplió la expectativa**.
+* El lenguaje no especifica si la inspección será evaluada solo para el identificado o también para los identificadores que utiliza (inspección transitiva), y queda librado a la implementación de cada runner. Sin embargo, es posible que en el futuro se modifique el lenguaje para soportar esto. 
