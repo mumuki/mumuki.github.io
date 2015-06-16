@@ -53,10 +53,33 @@ Por eso lo que hemos creado es un lenguaje muy simple de inspecciones: consultas
   
 ## Generalidades
 
-Hay algunas cosas más que tener en cuenta:
+### Inspecciones con argumentos
 
-* Como se aprecia en el cuadro anterior, la mayoría de las inspecciones no toman argumentos, pero algunas, como `HasUsage` requieren uno. Así, por ejemplo, la inspección de _usa el identificador en su definición a identificador foo?_ se escribe `HasUsage:foo`
-* La mayoriai de las inspecciones se ejecutan sólo si son especificadas en el ejercicio, pero algunas se ejecutan siempre (típicamente para detectar code smells). A las primeras expectativas se les dice explícitas, mientras que a las segundas, implícitas. Como regla general, las expectativas de la forma `HasRedundant*` son implícitas. 
-* Toda inspeccion puede ser negada anteponiendo `Not:`. Por ejemplo `Not:HasBinding` se debe leer como _es cierto que no existe el identificador?_
-* Todo runner debe soportar recibir exectativas con inspecciones que no soporta; ante este escenario, el runner debe indicar que **se cumplió la expectativa**.
-* El lenguaje no especifica si la inspección será evaluada solo para el identificado o también para los identificadores que utiliza (inspección transitiva), y queda librado a la implementación de cada runner. Sin embargo, es posible que en el futuro se modifique el lenguaje para soportar esto. 
+Como se aprecia en el cuadro anterior, la mayoría de las inspecciones no toman argumentos, pero algunas, como `HasUsage` requieren uno. Así, por ejemplo, la inspección de _usa el identificador en su definición a identificador foo?_ se escribe `HasUsage:foo`
+
+### Expectativas locales vs globales
+
+Las expectativas que describimos hasta ahora son un par `(binding, inspection)`; se tratan de expectativas _locales_. 
+
+Sin embargo, la plataforma también puede ejecutar expectativas _globales_, que se componen de sólamente una inspección, y analizan si algún identificador cumple una propiedad. Por ahora, no es posible escribir estas expectativas en los ejercicios de Mumuki, y se reservan sólo para expectativas implicitas (ver más abajo)
+
+### Expectativas explícitas vs Implícitas
+
+La mayoriai de las inspecciones se ejecutan sólo si son especificadas en el ejercicio, pero algunas se ejecutan siempre (típicamente para detectar code smells). A las primeras expectativas se les dice explícitas, mientras que a las segundas, implícitas. 
+
+Como regla general, las inspecciones de la forma `HasRedundant*` **no deberían** ser utilizadas en expectativas explícitas, ya que suelen ser utilizadas de forma implícita, negada (ver más abajo) y global por el runner. 
+
+### Negación de inspecciones
+
+Toda inspeccion puede ser negada anteponiendo `Not:`. Por ejemplo:
+
+*  `Not:HasBinding` se debe leer como _¿es cierto que no existe el identificador?_
+*  `Not:HasUsage:bar` se debe leer como _¿es cierto que el identificador no utiliza a bar?_
+
+### Defaults
+
+Todo runner debe soportar recibir exectativas con inspecciones que no soporta; ante este escenario, el runner debe indicar que **se cumplió la expectativa**.
+
+### Transitividad
+
+El lenguaje no especifica si la inspección será evaluada solo para el identificado o también para los identificadores que utiliza (inspección transitiva), y queda librado a la implementación de cada runner. Sin embargo, es posible que en el futuro se modifique el lenguaje para soportar esto. 
