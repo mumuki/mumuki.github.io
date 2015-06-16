@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "El Lenguaje de expectativas"
+date:   2015-06-16 19:09:00
+categories: expectativas plataform
+---
+
 En la [plataforma Mumuki](http://mumuki.io) para evaluar las soluciones que los usuarios envían utilizamos varias técnicas:
 
   1. pruebas automatizadas
