@@ -104,6 +104,7 @@ Es importante que un runner no permita ejecución de código arbitrario, para su
 En general, la implementación básica de un runner consiste en concatenar los tres fragmentos de código (solución, extra y test), persistirlo en un archivo temporal y ejecutarlo contra un test runner como junit o rspec.
 
 Sin embargo, muchas veces deberemos ponerle un poco más de amor:
+
  * algunas tecnologías requieren un tratamiento más complejo del código antes de ser testeado: agregar imports, headers, compilar a bytecode, etc.
  * cuanto más soporte agreguemos para las características opcionales, mejor será la información retornada al usuario final.
 
