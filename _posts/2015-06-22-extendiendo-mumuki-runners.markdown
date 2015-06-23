@@ -5,7 +5,7 @@ date:   2015-06-22 20:30:00
 categories: mumuki tech plataforma runners lenguaje
 ---
 
-> Mumuki es una plataforma extensible en lo que a lenguajes se refiere: agregar soporte para tu lenguaje favorito es muy simple.
+> [Mumuki](http://es.mumuki.io) es una plataforma extensible en lo que a lenguajes se refiere: agregar soporte para tu lenguaje favorito es muy simple.
 >
 > En este artículo vamos a contar justamente cómo hacer eso. Pero primero, repasemos rápidamente la arquitectura de Mumuki.
 
@@ -101,7 +101,7 @@ Es importante que un runner no permita ejecución de código arbitrario, para su
 
 ## Implementación
 
-En general, la implementación básica de un runner consiste en concatenar los tres fragmentos de código (solución, extra y test), persistirlo en un archivo temporal y ejecutarlo contra un test runner como junit o rspec.
+En general, la implementación básica de un runner consiste en concatenar los tres fragmentos de código (solución, extra y test), persistirlo en un archivo temporal y ejecutarlo contra un test runner como [junit](http://junit.org/) o [rspec](http://rspec.info/).
 
 Sin embargo, muchas veces deberemos ponerle un poco más de amor:
 
