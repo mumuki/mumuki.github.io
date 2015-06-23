@@ -14,7 +14,7 @@ categories: mumuki tech plataforma runners lenguaje
 
 ### La plataforma
 
-El corazón de Mumuki es su plataforma: una aplicación [Ruby on Rails](http://rubyonrails.org/), **stateful** que permite la carga de ejercicios y guías, y el envío de soluciones a los problemas. ¿Pero cómo hacemos para poder validar los ejercicios, escritos en lenguajes tan diversos como Haskell, Gobstones, o Ruby? Acá entran en escena los _test runner servers_, o simplemente, _runners_.
+El corazón de Mumuki es su plataforma: una aplicación [Ruby on Rails](http://rubyonrails.org/), **stateful** que permite la carga de ejercicios y guías, y el envío de soluciones a los problemas. ¿Pero cómo hacemos para poder validar los ejercicios, escritos en lenguajes tan diversos como Haskell, [Gobstones](http://www.gobstones.org/), o Ruby? Acá entran en escena los _test runner servers_, o simplemente, _runners_.
 
 ### Los _runners_
 
