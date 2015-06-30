@@ -1,10 +1,39 @@
+---
+layout: post
+title:  "Escribiendo Guías"
+date:   2015-06-24 12:30:00
+categories: mumuki tech plataforma guia
+---
 
-¿Cómo crear una guía?
-====================
+Dentro de Mumuki, una guía es en escencia un conjunto ordenado de ejericicios. Si bien es posible tener ejercicios sueltos, es muy recomendable que antes o después sean integrados dentro de una guía, dado que:
 
-# Introducción
+  * hace más fácil dar con el ejercicio
+  * ayuda al usuario a organizar mejor su estudio
 
-Una guía es un conjunto de ejercicios de Mumuki. Dado que todo ejercicio pertenece a una guía, si querés crear tus propios ejercicios vas a tener que:
+Como las guías, entonces, son tan importantes para Mumuki, existen dos formas de cargarlas: a través de la paltaforma, o a través de un repositorio Github.
+
+Sin embargo, el mayor desafío no se encuentra en escribirlas, sino en pensarlas. Así que primero entendamos sobre su anatomía.
+
+## Anatomia de una guía
+
+## Cualidades de una guía
+
+Escribir una buena guía no es trivial; he aquí algunas recomendaciones:
+
+
+* Toda guía debe ser atractiva al usario
+* brevedad
+* unidad conceptual
+* respetar los tipos
+* reforzar teoria
+
+
+* tipos de guias
+* unidad conceptual
+
+
+#
+ Dado que todo ejercicio pertenece a una guía, si querés crear tus propios ejercicios vas a tener que:e
  * Encontrar alguna guía ya existente y contribuir a ella
  * O bien, crear una guía propia
 
