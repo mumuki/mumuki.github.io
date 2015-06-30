@@ -1,13 +1,11 @@
 ---
 layout: page
 title: Acerca de Mumuki
+description: Educación libre de la programación, de la práctica a la teoría.
 permalink: /about/
 ---
 
-> Educación libre de la programación, de la práctica a la teoría.
-
-
-Muchas veces nos preguntan qué es Mumuki. ¿Una plataforma para enseñar a programar? ¿Una herramienta? ¿Una colección de tutoriales y ejercicios? Bueno, es un poco de todo eso.
+Muchas veces nos preguntan qué es Mumuki. ¿Una plataforma on-line para enseñar a programar? ¿Una herramienta para resolver problemas de programación? ¿Una colección de tutoriales y ejercicios? Bueno, es un poco de todo eso.
 
 Mumuki es un proyecto para que todo el mundo tenga acceso de **calidad**, **libre** y **gratuito** al conocimiento de la programación. ¿Suena amibicioso, no? ¡Lo és! En mumuki nos gusta pensar en grande.
 
@@ -19,7 +17,7 @@ Pero bajemos a tierra, porque tenemos objetivos bien concretos:
 
 2. crear **contenido de calidad**, combinando la didáctica de los mejores sitios para aprender a programar, con el nivel conceptual que se puede encontrar en universidades de ingenieria o ciencias de la computación.
 
-3. ayudar a crear herramientas que se integren con Mumuki y **soportar usos no tradicionales** de la plataforma y contenidos: herramientas para docentes, soporte offline, instancias locales o dispositivos embebidos, etc.
+3. **crear una comunidad** que construya herramientas que se integren con Mumuki, para **soportar usos no tradicionales** de la plataforma y contenidos: herramientas para docentes, infraestructura para torneos de programación, evaluaciones, soporte offline, instancias locales, dispositivos embebidos, etc.
 
 Y además estamos convencidos de algunas cosas:
 
