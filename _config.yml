@@ -1,13 +1,18 @@
 title: Proyecto Mumuki
 email: mumuki-dev@googlegroups.com
+header-img: img/bg.jpg
 description: >
   Sitio institucional en español del Proyecto Mumuki,
   el proyecto colectivo de brindar educación de
   calidad, libre y gratuita sobre programación.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mumuki.org"
-twitter_username: MumukiPlatform
+twitter_username: MumukiProject
 github_username:  mumuki
+facebook_username:  mumukiapp
 
 # Build settings
 markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
