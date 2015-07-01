@@ -92,7 +92,7 @@ El protocolo es bastante autodescriptivo:
 
 Como se comentó más arriba, el feedback y resultados de expectativas son opcionales. Devolver un string vacío y una lista vacía en caso de que el runner no lo soporte es suficiente.
 
-Es importante que un runner no permita ejecución de código arbitrario, para su propia seguridad. En este sentido, deberá prestar atenció a:
+Es importante que un runner no permita ejecución de código arbitrario, para su propia seguridad. En este sentido, deberá prestar atención a:
 
   * Evitar procesamientos durante períodos largos: debería abortarlo si excede los 3 segundos de ejecución totales
   * Evitar consumo excesivo de memoria: debería abortar el programa si empieza a consumir "grandes" cantidades de memoria.
