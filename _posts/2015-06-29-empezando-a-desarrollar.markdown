@@ -20,7 +20,7 @@ Mumuki Platform es una aplicación Rails bastante estándar. Así que vas a nece
   * Un gestor de versiones. Nosotros recomendamos [rbenv](https://github.com/sstephenson/rbenv) .
   * Una instalación de Ruby. Todo Mumuki está desarrollado bajo ruby `2.0.0`
   * Bundler
-  * Postgre `9.1`
+  * PostgreSQL `9.1`
   * El mar de dependencias nativas instaladas en tu sistema operativo
 
 No vamos a repetir lo que ya Internet escribió; acá hay algunos tutoriales:
@@ -63,12 +63,12 @@ Para ello, tenés dos opciones:
 
 Vamos a asumir el segundo caso. Realizá los siguientes pasos:
 
-1. Loguate en la plataforma. Localmente se utiliza un usuario _fake_, por lo que automáticamente ingresarás como `testuser` sin pasar por el login normal.
+1. Logueate en la plataforma. Localmente se utiliza un usuario _fake_, por lo que automáticamente ingresarás como `testuser` sin pasar por el login normal.
 2. Andá al perfil del usuario `testuser`
-3. Seleccioná _Guías_ y allí _crar guía_
-4. Ingresá un nombre cualquiera y la url del repo Github que contiene la guía.
+3. Seleccioná _Guías_ y allí _crear guía_
+4. Ingresá un nombre cualquiera y la URL del repo Github que contiene la guía.
 5. Guardá los cambios
 6. Recibirás un warning de que el usuario no tiene permisos; simplemente ignoralo porque el usuario `testuser` no tiene acceso a Github.
-7. Dirigie a la solapa _importar/exportar_ y seleccioná _Importar_
+7. Dirigite a la solapa _importar/exportar_ y seleccioná _Importar_
 
 Después de unos segundos, deberías tener los ejercicios listos para ser utilizados.
