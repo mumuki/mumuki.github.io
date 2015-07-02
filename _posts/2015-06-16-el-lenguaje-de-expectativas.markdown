@@ -51,7 +51,7 @@ Por eso lo que hemos creado es un lenguaje muy simple de inspecciones: consultas
 |HasUsage:_target_| El identificador utiliza el identificador _target_|Haskell, Prolog, Gobstones|
 |HasWhile| El identificador utiliza repetición condicional|Gobstones|
 
-> Actualización: todo el tiempo se están agregando nuevas inspecciones. Mirá siempre versión más actualizada acá: https://github.com/mumuki/mumuki-platform/wiki/Inspections-List
+> Actualización: todo el tiempo se están agregando nuevas inspecciones. Mirá siempre [lista completa en la wiki](https://github.com/mumuki/mumuki-platform/wiki/Inspections-List)
   
 ## Generalidades
 
