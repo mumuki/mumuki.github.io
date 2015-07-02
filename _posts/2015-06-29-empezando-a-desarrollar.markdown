@@ -3,6 +3,7 @@ layout: post
 title:  "Empezando a desarrollar Mumuki"
 date:   2015-06-29 20:30:00
 categories: mumuki tech plataforma runners lenguaje bootstrap
+author: flbulgarelli
 ---
 
 Ya escuchaste de Mumuki. Ya lo probaste. Y te encantó la idea, pero hay algunas cosas que te gustaría mejorar. O estás haciendo un [test runner](http://mumuki.org/mumuki/tech/plataforma/runners/lenguaje/2015/06/22/extendiendo-mumuki-runners/), y querés hacer una prueba de integración. O simplemente querés forkear Mumuki para hacer alguna otra cosa.
