@@ -3,6 +3,7 @@ layout: post
 title:  "Extendiendo Mumuki: Runners"
 date:   2015-06-22 20:30:00
 categories: mumuki tech plataforma runners lenguaje
+author: flbulgarelli
 ---
 
 > [Mumuki](http://es.mumuki.io) es una plataforma extensible: agregar soporte para tu lenguaje favorito es muy simple.
