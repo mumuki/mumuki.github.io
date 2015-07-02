@@ -5,7 +5,7 @@ date:   2015-06-22 20:30:00
 categories: mumuki tech plataforma runners lenguaje
 ---
 
-> [Mumuki](http://es.mumuki.io) es una plataforma extensible en lo que a lenguajes se refiere: agregar soporte para tu lenguaje favorito es muy simple.
+> [Mumuki](http://es.mumuki.io) es una plataforma extensible: agregar soporte para tu lenguaje favorito es muy simple.
 >
 > En este artículo vamos a contar justamente cómo hacer eso. Pero primero, repasemos rápidamente la arquitectura de Mumuki.
 
@@ -22,7 +22,7 @@ Un runner es simplemente un servidor HTTP, **stateless**, responsable de evaluar
 
 Para cada lenguaje en la plataforma, existe un runner asociado, identificado mediante su URL.
 
-Cada vez que es necesario validar una solución, en función del lenguaje del ejercicio, Mumuki elige la URL correspondiente y se comunican con el runner.
+Cada vez que es necesario validar una solución, en función del lenguaje del ejercicio, Mumuki elige la URL correspondiente y se comunica con el runner.
 
 Ahora bien, ¿qué significa "evaluar las soluciones"? ¿Cuáles son las responsabilidades en detalle de un runner?
 
@@ -30,18 +30,18 @@ Ahora bien, ¿qué significa "evaluar las soluciones"? ¿Cuáles son las respons
 
 En lo que concierne a la evaluación de soluciones, un ejercicio Mumuki consta de:
 
-  * Un **código extra**, que es código que se cargará al evaluar las soluciones pero que el usuario no puede ver. Este código está escrito, obviamente, en el mismo lenguaje del ejercicio.
+  * **Código extra**, que es código que se cargará al evaluar las soluciones pero que el usuario no puede ver. Este código está escrito, obviamente, en el mismo lenguaje del ejercicio.
   * Una suite de **tests**, expresada en el lenguaje y framework de testing que el runner soporte (que normalmente coincide con el lenguaje del ejercicio, aunque Gobstones es una excepción notable).
   * Cero o más **expectativas**: una lista de pares `(binding, inspection)` valor que indican objetivos que la solución debe cumplir. Más información [aquí](http://mumuki.org/expectativas/plataform/2015/06/16/el-lenguaje-de-expectativas.html).
 
-Un runner deberá entonces procesar estos tres elementos junto a la solución del alumno, y podrá generar los siguientes resultados:
+Un runner deberá entonces procesar estos tres elementos junto a la solución del alumno, y generará los siguientes resultados:
 
-  * La **salida** del framework de test, en cualquiera de los siguientes formatos: texto plano, markdown o html. Es responsabilidad del creador del runner elegir el formato que mas le convenga. Esta información es **obligatoria**
+  * La **salida** del framework de test, en cualquiera de los siguientes formatos: texto plano, markdown o html. Esta información es **obligatoria**
   * Un indicador de **éxito** de las pruebas: `passed` o `failed`. Esta información es **obligatoria**
   * Los **resultados de las expectativas**: una lista de cero o más pares `(expectation, result)`, donde `result` es simplemente un booleano. Esta información es **opcional**
   * **Feedback**: explicación humana de los errores y propuesta de solucion. Esta información es **opcional**
 
-Ahora que entendimos qué es lo que la plataforma y runners intercambian, analicemos el protocolo de comunicación.
+Ahora que entendimos lo que la plataforma y runners intercambian, analicemos el protocolo de comunicación.
 
 ## El protocolo
 
@@ -92,6 +92,8 @@ El protocolo es bastante autodescriptivo:
 
 Como se comentó más arriba, el feedback y resultados de expectativas son opcionales. Devolver un string vacío y una lista vacía en caso de que el runner no lo soporte es suficiente.
 
+### Consideraciones sobre seguridad
+
 Es importante que un runner no permita ejecución de código arbitrario, para su propia seguridad. En este sentido, deberá prestar atención a:
 
   * Evitar procesamientos durante períodos largos: debería abortarlo si excede los 3 segundos de ejecución totales
@@ -140,7 +142,7 @@ Si bien implementar un runner básico desde cero es relativamente sencillo, para
 
 Por eso creamos gemas para simplificar el proceso de construcción de runners implementados en Ruby:
 
-  * [mumukit](https://github.com/mumuki/mumukit): permite crear runners con un mínimo esfuerzo, declarando algunas clases concretas.
+  * [mumukit](https://github.com/mumuki/mumukit): framework minimalista para crear runners con un mínimo esfuerzo, sin tener que preocuparse por la interacción HTTP.
   * [mumukit-inspection](https://github.com/mumuki/mumukit-inspection): parser para el lenguaje de expectativas
   * [mumukit-bridge](https://github.com/mumuki/mumukit-bridge): conector http que es usado por la plataforma para interactuar con los runners; útil para realizar pruebas de integración
 
