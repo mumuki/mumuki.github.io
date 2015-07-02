@@ -50,6 +50,8 @@ Por eso lo que hemos creado es un lenguaje muy simple de inspecciones: consultas
 |HasNot|El identificador usa not|Prolog|
 |HasUsage:_target_| El identificador utiliza el identificador _target_|Haskell, Prolog, Gobstones|
 |HasWhile| El identificador utiliza repetición condicional|Gobstones|
+
+> Actualización: todo el tiempo se están agregando nuevas inspecciones. Mirá siempre versión más actualizada acá: https://github.com/mumuki/mumuki-platform/wiki/Inspections-List
   
 ## Generalidades
 
