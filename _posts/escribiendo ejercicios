@@ -1,0 +1,32 @@
+Por ejemplo, asumamos un problema muy simple, que describiremos así:
+
+```
+Escribir una expresión matemática que sume 7, empleando los números 3, 4 y la suma.
+```
+
+Ahora, tenemos que pensar cómo evaluar si una solución al problema es correcta. Esta es la parte difícil de cualquier planteo problema: poder saber si una solución propuesta realmente resuelve el problema o no. Aún reconociendo que siempre hay grises, vamos a tener que fijar un criterio.
+
+Partamos de la base de que la expresión `3 + 4` es una solución válida al problema, pero **no es única**. Por tanto, para evaluar lo basta con comporar los textos de una solución esperada y una solución obtenida.
+
+Asumamos entonces que queremos dar por válidas las siguientes soluciones:
+
+ * `3 + 4`
+ * `3   +   4`
+ * `4 + 3`
+ * `(4 + 3)`
+ * `(4 * 1) + 3 + 0`
+ * `4 + 1 + 3 - 1`
+ * etc
+
+Y que no daremos por válidas las siguientes expresiones:
+
+* `3 + 4 + 3` (no da 7)
+* `3 + 2 + 1 + 1` (no emplea el 4)
+* `14 - 3 - 4 ` (no emplea la suma)
+
+Y algunas posibles formas (complementarias) de evaluarlo son:
+
+  * Que la expresión utilice el operador `+`
+  * Que la expresión utilice los numeros 3 y 4
+  * Que la expresión utilice el operador +
+
