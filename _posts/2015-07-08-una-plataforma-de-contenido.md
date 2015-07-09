@@ -19,7 +19,7 @@ Podemos decir muchas cosas bonitas (¡y ciertas!) sobre la plataforma:
 
 Pero nada de esto nos dice qué es lo que hace. O en qué otros contextos podríamos usarla. Y esto es importante, porque **al ser una plataforma de código abierto, quizás, vos, ahora, que estás leyendo, podrías encontrarle un nuevo y fantástico uso**.
 
-Así que despojémsola de su semántica y aplicación y vayamos a su esencia:
+Así que despojémosla de su semántica y aplicación y vayamos a su esencia:
 
 ## La plataforma Mumuki es un CMS
 
@@ -70,10 +70,10 @@ Pero ¿cómo hace para evaluar las soluciones?
 
 Bueno, acá nos tenemos que meter en detalles un poco más técnicos. Al cargar un ejercicio también debemos especificar:
 
-* _código_ extra: herramientas que el usuario puede utilizar al escribir su solución
-* Una forma de evaluar al problema. La plataforma soporta dos técnicas complementarias:
-  * Pruebas: evalúan que la solución resuelva al problema de forma correcta.
-  * Objetivos: evalúan que la solución resuelva el problema de forma adecuada.
+* _código_ extra: herramientas que el usuario puede utilizar al escribir su solución. Pueden ser fruto de ejercicios anteriores o simplemente **partes del problema que el autor quiera facilitar**.
+* Una forma de evaluar **si la solución resuelve el problema**. La plataforma soporta dos técnicas complementarias:
+  * Pruebas: evalúan que la solución resuelva el problema de forma correcta, es decir, **que llegue a un resultado esperado**.
+  * Objetivos: evalúan que la solución resuelva el problema de forma adecuada, es decir, **que se utilicen las herramientas correctas**.
 
 Probablemente estés pensando: ¿Pruebas, objetivos, _código_ extra? ¡En español por favor!
 
