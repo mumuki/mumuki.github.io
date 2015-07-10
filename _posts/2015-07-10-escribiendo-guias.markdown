@@ -117,6 +117,7 @@ Obligatorios:
     * `gobstones`
     * `ruby`
   * `learning`: flag booleano que inica si la guía es un apunte.
+  * `original_id_format`, `order`: permiten cambiar el formato del numero de ejericio, y modificar el orden natural de los ejercicios. Recomendamos no utilizarlos (¡salvo que sepas lo que estás haciendo!)
 * `expectations.md`: expectations globales **no está aun soportado, [pero pronto lo estará](https://github.com/mumuki/mumuki-platform/issues/192)**
 
 
