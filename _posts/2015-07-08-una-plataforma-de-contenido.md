@@ -81,7 +81,7 @@ Acá el punto importante es que la forma específica de escribir estas reglas pa
 
 El proyecto Mumuki ofrece algunas, pero es probable que vos quieras agregar las tuyas. Por tanto, si sos programador, te recomendamos que leas [extendiendo Mumuki: Runners](/mumuki/tech/plataforma/runners/lenguaje/2015/06/22/extendiendo-mumuki-runners/).
 
-Y si no lo sos, y tenés ganas de que soportemos algún tipo de ejercicio nuevo, [contactános](mailto:info@mumuki.org).
+Y si no lo sos, y tenés ganas de que soportemos algún tipo de ejercicio nuevo, [contactanos](mailto:info@mumuki.org).
 
 ## Guías
 
@@ -90,7 +90,7 @@ Para plantear un problema más largo o complejo, contamos con la guía: una secu
 Una guía debe tener un hilo conductor, ya sea
 
 * conceptual: todos los ejercicios están orientados a practicar un mismo concepto.
-* o de _dominio_: todos los ejercicios describen una situación comun. Por ejemplo, todos los problemas planteados ocurren en una granja.
+* o de _dominio_: todos los ejercicios describen una situación común. Por ejemplo, todos los problemas planteados ocurren en una granja.
 
 La plataforma Mumuki diferencia dos tipos de guías:
 
