@@ -87,16 +87,16 @@ Dentro de un directorio de ejercicio, deberemos crear tres archivos obligatorios
    * `.rb` para Ruby
    * etc
  * `meta.yml`: es un archivo de propiedades [YAML](http://yaml.org/). Entre las propiedad soportadas más importantes tenemos:
-    * `layout`: Dice en qué posición se mostrará el editor. Puede tomar los valores `no_editor`, `editor_left`, `editor_bottom`, `scratchy`. Para más información y ejemplos, [ver aquí](https://github.com/mumuki/mumuki-platform/pull/235#issue-89811282). El default es `editor_left`
+    * `layout`: indica en qué posición se mostrará el editor. Puede tomar los valores `no_editor`, `editor_left`, `editor_bottom`, `scratchy`. Para más información y ejemplos, [ver aquí](https://github.com/mumuki/mumuki-platform/pull/235#issue-89811282). El default es `editor_left`
     * `tags`: una lista de tags: etiquetas como los hashtags de twitter, pero sin el #. Los tags son muy importantes, porque sirven para buscar el ejercicio después.
  * `description.md`: es la descripción del ejercicio, que es básicamente tomar el enunciado y formatearlo en [Markdown](http://daringfireball.net/projects/markdown/).
 
  > En todos los archivos Markdown, también soportamos varias [extensiones de Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/) y [emojis](http://www.emoji-cheat-sheet.com/).
 
-Ademas, hay algunos archivos opcionales:
+Además, hay algunos archivos opcionales:
 
- * `hint.md`: Otro archivo Markdown con con _tips_ sobre como resolver el ejercicio; es similar al description.md, pero por defecto el contenido aparece oculto hasta que el usuario lo seleccione. Este archivo es importante para ayudar al usuario a resolver el problema cuando no sabe cómo encararlo, y debería tener enlaces a apuntes o explicaciones.
- * `extra`: Un archivo con código extra que el usuario no verá, pero estará disponible cuando el usuario ejecute las pruebas. **La extensión del archivo depende del lenguaje**: `.js`, `.gbs`, `.hs`, etc.
+ * `hint.md`: otro archivo Markdown con con _tips_ sobre có:mo resolver el ejercicio; es similar al description.md, pero por defecto el contenido aparece oculto hasta que el usuario lo seleccione. Este archivo es importante para ayudar al usuario a resolver el problema cuando no sabe cómo encararlo, y debería tener enlaces a apuntes o explicaciones.:
+ * `extra`: un archivo con código extra que el usuario no verá, pero estará disponible cuando el usuario ejecute las pruebas. **La extensión del archivo depende del lenguaje**: `.js`, `.gbs`, `.hs`, etc.
  * `corollary.md`: un tercer archivo Markdown que se muestra después de hacer bien el ejercicio
  * `expectations.yml`: un YML con las _expectations_, [podés leer sobre eso acá](http://mumuki.org/expectativas/plataform/2015/06/16/el-lenguaje-de-expectativas.html)
 
@@ -118,17 +118,17 @@ Obligatorios:
     * `ruby`
   * `learning`: _flag_ _booleano_ que indica si la guía es un apunte.
   * `original_id_format`, `order`: permiten cambiar el formato del numero de ejericio, y modificar el orden natural de los ejercicios. Recomendamos no utilizarlos (¡salvo que sepas lo que estás haciendo!)
-* `expectations.md`: expectations globales **no está aun soportado, [pero pronto lo estará](https://github.com/mumuki/mumuki-platform/issues/192)**
+* `expectations.md`: expectations globales **no está aún soportado, [pero pronto lo estará](https://github.com/mumuki/mumuki-platform/issues/192)**
 
 
 ## Cualidades de una guía
 
 Escribir una buena guía no es trivial, dado que debe ser al mismo tiempo educativa y atractiva al usuario; he aquí algunas recomendaciones:
 
-* **Brevedad**: No hacer guías o ejercicios innecesariamente largos
-* **Unidad conceptual**: Todos los ejercicios de la guía deben tener algo que ver. O bien todos tratan de un mismo modelo, o bien todos tratan los giren en torno a los mismos conceptos.
+* **Brevedad**: no hacer guías o ejercicios innecesariamente largos
+* **Unidad conceptual**: todos los ejercicios de la guía deben tener algo que ver. O bien todos tratan de un mismo modelo, o bien todos tratan los giren en torno a los mismos conceptos.
 * **Respetar los tipos**: si la guía es un apunte, marcarla como `learning: true`
 * **Reforzar teoría**: siempre que sea posible, colocar corolarios reforzando los elementos teóricos del ejercicio, o llamando al usuario a reflexionar sobre lo que hizo. Esto es particularmente importante en guías de tipo apunte.
 * **Poner ayudas útiles**: Si el ejercicio tiene aspectos complejos o utiliza herramientas poco usadas hasta ese punto, colocar en `hint.md` ayudas valiosas sobre cómo encarar el ejercicio.
-* **Expresividad**: Poner cantidad suficiente de tests, y muy buenos títulos para los mismos. Pensá que cuando un test falle, ese título es el que verá el usuario final, y si no es suficientemente expresivo, no sabrá en qué se equivocó.
-* **Complementar las formas de evaluación**: Si el runner soporta _expectations_, utilizarlas. Recomendamos poner al menos una _expectation_ de `HasBinding` por cada punto pedido en el ejercicio.
+* **Expresividad**: poner cantidad suficiente de tests, y muy buenos títulos para los mismos. Pensá que cuando un test falle, ese título es el que verá el usuario final, y si no es suficientemente expresivo, no sabrá en qué se equivocó.
+* **Complementar las formas de evaluación**: si el _runner_ soporta _expectations_, utilizarlas. Recomendamos poner al menos una _expectation_ de `HasBinding` por cada punto pedido en el ejercicio.
