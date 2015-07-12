@@ -107,7 +107,7 @@ Finalmente, hay algunos archivos que van en la raíz del repositorio.
 Obligatorios:
 
 * `description.md`: una descripción de la guía, en Markdown.
-* `corollary.md`: similar al corollary del ejercicio, pero que se muestra al terminar la guía
+* `corollary.md`: similar al `corollary.md` del ejercicio, pero que se muestra al terminar la guía
 * `meta.yml`: un archivo de propiedades sobre la guía:
   * `locale`: en idioma de la guía. Soportamos `en` (Inglés) y `es` (Español)
   * `language`: el lenguaje de programación. Soportamos:
@@ -117,8 +117,8 @@ Obligatorios:
     * `gobstones`
     * `ruby`
   * `learning`: _flag_ _booleano_ que indica si la guía es un apunte.
-  * `original_id_format`, `order`: permiten cambiar el formato del numero de ejericio, y modificar el orden natural de los ejercicios. Recomendamos no utilizarlos (¡salvo que sepas lo que estás haciendo!)
-* `expectations.md`: expectations globales **no está aún soportado, [pero pronto lo estará](https://github.com/mumuki/mumuki-platform/issues/192)**
+  * `original_id_format`, `order`: permiten cambiar el formato del numero de ejercicio, y modificar el orden natural de los ejercicios. Recomendamos no utilizarlos (¡salvo que sepas lo que estás haciendo!)
+* `expectations.md`: _expectations_ globales aún no está soportado, **[pero pronto lo estará](https://github.com/mumuki/mumuki-platform/issues/192)**
 
 
 ## Cualidades de una guía
