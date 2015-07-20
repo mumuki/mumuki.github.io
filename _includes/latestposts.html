@@ -1,6 +1,6 @@
 {% if site.posts != empty %}
 <div class="recent-posts">
-    <h1>Recent Posts</h1>
+    <h1>Últimos Posts</h1>
     {% for post in site.posts limit: 3 %}
     {% if forloop.first %}
     {% assign add_class = 'most-recent' %}
@@ -27,7 +27,7 @@
     {% assign fresh_tag = '' %}
     {% endfor %}
     <ul>
-            <a href="{{ site.baseurl }}/blog">View More...</a>
+            <a href="{{ site.baseurl }}/blog">Ver más...</a>
     </ul>
 </div>
 {% endif %}
