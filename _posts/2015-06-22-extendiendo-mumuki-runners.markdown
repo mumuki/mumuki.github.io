@@ -33,7 +33,7 @@ En lo que concierne a la evaluación de soluciones, un ejercicio Mumuki consta d
 
   * **Código extra**, que es código que se cargará al evaluar las soluciones pero que el usuario no puede ver. Este código está escrito, obviamente, en el mismo lenguaje del ejercicio.
   * Una suite de **tests**, expresada en el lenguaje y framework de testing que el runner soporte (que normalmente coincide con el lenguaje del ejercicio, aunque Gobstones es una excepción notable).
-  * Cero o más **expectativas**: una lista de pares-valor `(binding, inspection)` que indican objetivos que la solución debe cumplir. Más información [aquí](http://mumuki.org/expectativas/plataform/2015/06/16/el-lenguaje-de-expectativas/).
+  * Cero o más **expectativas**: una lista de pares `(binding, inspection)` que indican objetivos que la solución debe cumplir. Más información [aquí](http://mumuki.org/expectativas/plataform/2015/06/16/el-lenguaje-de-expectativas/).
 
 Un runner deberá entonces procesar estos tres elementos junto a la solución del alumno, y generará los siguientes resultados:
 
