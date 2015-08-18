@@ -25,7 +25,7 @@ Así que despojémosla de su semántica y aplicación y vayamos a su esencia:
 
 (...un CMS muy especial)
 
-La plataforma es en escencia un [CMS (Sistema Gestor de Contenido)](https://en.wikipedia.org/wiki/Content_management_system) especializado en _[problemas](https://en.wikipedia.org/wiki/Problem_solving)_. Como cualquier CMS, permite
+La plataforma es en esencia un [CMS (Sistema Gestor de Contenido)](https://en.wikipedia.org/wiki/Content_management_system) especializado en _[problemas](https://en.wikipedia.org/wiki/Problem_solving)_. Como cualquier CMS, permite
 
   * Cargar contenido
   * Administrar contenido
