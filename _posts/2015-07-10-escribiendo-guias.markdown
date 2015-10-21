@@ -98,7 +98,7 @@ Además, hay algunos archivos opcionales:
  * `hint.md`: otro archivo Markdown con con _tips_ sobre có:mo resolver el ejercicio; es similar al description.md, pero por defecto el contenido aparece oculto hasta que el usuario lo seleccione. Este archivo es importante para ayudar al usuario a resolver el problema cuando no sabe cómo encararlo, y debería tener enlaces a apuntes o explicaciones.:
  * `extra`: un archivo con código extra que el usuario no verá, pero estará disponible cuando el usuario ejecute las pruebas. **La extensión del archivo depende del lenguaje**: `.js`, `.gbs`, `.hs`, etc.
  * `corollary.md`: un tercer archivo Markdown que se muestra después de hacer bien el ejercicio
- * `expectations.yml`: un YML con las _expectations_, [podés leer sobre eso acá](http://mumuki.org/expectativas/plataform/2015/06/16/el-lenguaje-de-expectativas.html)
+ * `expectations.yml`: un YML con las _expectations_, [podés leer sobre eso acá](http://www.mumuki.org/expectativas/plataform/2015/06/16/el-lenguaje-de-expectativas/)
 
 ### Archivos en la raíz
 
