@@ -1,0 +1,23 @@
+header-img: img/bg.jpg
+title: Proyecto Mumuki
+email: info@mumuki.org
+description: >
+  Sitio en español sobre el Proyecto Mumuki,
+  el proyecto colectivo de brindar educación de
+  calidad, libre y gratuita sobre programación.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mumuki.org"
+
+twitter_username: MumukiProject
+facebook_username:  MumukiProject
+medium_username:  MumukiProject
+github_username:  mumuki
+
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+
+
