@@ -77,8 +77,7 @@ aside {
     .navbar-header .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
-        font-weight: 700;
-        text-transform: uppercase;
+        font-weight: bold;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -148,14 +147,13 @@ aside {
 }
 
 // Homepage Header
-
 header {
     position: relative;
     width: 100%;
+    background-image: url('../img/mumuki.jpg');
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -165,8 +163,7 @@ header {
         width: 100%;
         .header-content-inner {
             h1 {
-                font-weight: 700;
-                text-transform: uppercase;
+                font-weight: bold;
                 margin-top: 0;
                 margin-bottom: 0;
             }
@@ -349,3 +346,12 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+.logo{
+    height: 10em;
+    width: 10em;
+}
+
+.user-logo{
+    height: 60px;
+    margin-top: 10px;
+}
