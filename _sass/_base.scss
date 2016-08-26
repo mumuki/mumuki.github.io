@@ -71,7 +71,6 @@ aside {
 
 .navbar-default {
     background-color: white;
-    border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
@@ -109,7 +108,7 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border: white, .5;
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             &:hover,
@@ -349,9 +348,21 @@ body {
 .logo{
     height: 10em;
     width: 10em;
+    border-width: thin;
+    border-color: white;
+    border-style: solid;
 }
 
 .user-logo{
     height: 60px;
     margin-top: 10px;
 }
+
+.carousel-indicators li {
+    background-color: $theme-dark;
+    &.active {
+        background-color: $theme-primary;
+    }
+}
+
+
