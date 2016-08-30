@@ -1,35 +1,42 @@
 <aside class="bg-light" >
   <div class="container">
     <div class="row">
-      <div class="span12 carousel-container">
-        <div id="carousel" class="carousel slide carousel-fade">
-
-          <!-- Carousel items -->
+      <div class="col-md-6 col-xs-12">
+        <div id="carousel-text" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div data-slide-no="0" class="item carousel-item active">
+              <h1>Esta es la descripcion de la landing</h1>
+            </div>
+            <div data-slide-no="1" class="item carousel-item">
+              <h1>Esta es la descripcion de la success</h1>
+            </div>
+            <div data-slide-no="2" class="item carousel-item">
+              <h1>Esta es la descripcion de la error</h1>
+            </div>
+            <div data-slide-no="3" class="item carousel-item">
+              <h1>Esta es la descripcion de la finish</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div id="carousel-images" class="carousel slide carousel-fade">
           <div class="carousel-inner">
             <div data-slide-no="0" class="item carousel-item active">
               <img src="img/landing.png" alt="">
-              <div class="carousel-caption">
-              </div>
             </div>
             <div data-slide-no="1" class="item carousel-item">
               <img src="img/success.png" alt="">
-              <div class="carousel-caption">
-              </div>
             </div>
             <div data-slide-no="2" class="item carousel-item">
               <img src="img/error.png" alt="">
-              <div class="carousel-caption">
-              </div>
             </div>
             <div data-slide-no="3" class="item carousel-item">
               <img src="img/finish.png" alt="">
-              <div class="carousel-caption">
-              </div>
             </div>
           </div>
-          <!-- Carousel nav -->
-          <a class="carousel-control left" href="#carousel" data-slide="prev">‹</a>
-          <a class="carousel-control right" href="#carousel" data-slide="next">›</a>
+          <a class="carousel-control left" href="#carousel-images" data-slide="prev">‹</a>
+          <a class="carousel-control right" href="#carousel-images" data-slide="next">›</a>
         </div>
       </div>
     </div>
