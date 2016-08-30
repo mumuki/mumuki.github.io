@@ -123,6 +123,9 @@ aside {
                 color: white;
             }
         }
+        &.affix-top {
+            border: none;
+        }
         &.affix {
             background-color: white;
             border-color: rgba($theme-dark, .5);
