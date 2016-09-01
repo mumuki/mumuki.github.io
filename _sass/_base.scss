@@ -364,8 +364,40 @@ body {
     border-style: solid;
 }
 
+.person-logo{
+    height: 10em;
+    width: 10em;
+}
+
 .user-logo{
     height: 60px;
     margin-top: 10px;
+}
+
+section#us {
+    .white-link {
+        color: white;
+        &:hover, &:focus {
+            color: darken($theme-primary, 10%);
+        }
+    }
+    i {
+        color: white;
+        &:hover, &:focus {
+            color: darken($theme-primary, 10%);
+        }
+    }
+    h4.name-title {
+        font-size: 1.5em;
+    }
+    i {
+        font-size: 1.5em;
+    }
+    .nopadding {
+        padding: 0 0 0 0;
+    }
+    .icons {
+        margin-bottom: 15px;
+    }
 }
 
