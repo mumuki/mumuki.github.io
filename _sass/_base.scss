@@ -403,3 +403,38 @@ section#us {
     }
 }
 
+section#press {
+    .press-image {
+        width: 50%;
+        margin: auto;
+    }
+    .press-text {
+        position: relative;
+        left: -40px;
+    }
+    .press-link {
+        font-size: 16px;
+    }
+    .press-description {
+        font-size: 10px;
+        margin-top: 1em;
+    }
+}
+@media screen and (max-width: 991px){
+    section#press {
+        .press-image {
+            width: 50%;
+            margin: auto;
+        }
+        .press-description {
+            font-size: 14px;
+        }
+        .press-text {
+            top: 10px;
+            left: 0;
+            position: relative;
+            width: 50%;
+            margin: auto;
+        }
+    }
+}
