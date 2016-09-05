@@ -19,7 +19,7 @@
               <div class="press-text">
                 <a href="{{release.link}}" class="press-link"> {{release.title}} </a>
                 <p class="text-muted press-description">
-                   {{release.description}}
+                   {{release.description | markdownify}}
                 </p>
               </div>
             </div>
