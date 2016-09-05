@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">{{site.data.us.who_we_are}}</h2>
+                <h2 class="section-heading">{{site.data.us.text.who_we_are}}</h2>
                 <hr class="primary">
             </div>
         </div>
         <div class="row">
-            {% for member in site.data.members %}
+            {% for member in site.data.us.members %}
                 <div class="col-lg-2 col-md-2 col-xs-6 {{member.offset}} text-center">
                     <img src="{{member.image}}" class="img-circle person-logo">
                     <h4 class="name-title">{{member.name}}</h4>

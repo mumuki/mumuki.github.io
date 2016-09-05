@@ -1,0 +1,19 @@
+- title: De la práctica a la teoría
+  icon: trophy
+  description: "Aprender a programar exige ejercitación constante, pero también adquirir conceptos teóricos que permitan comprender lo que se está haciendo. Mumuki va más allá del learn by doing: de toda práctica surgen elementos teóricos."
+
+- title: No todo cambia
+  icon: clock-o
+  delay: .1s
+  description: "Aunque las tecnologías cambian a diario, todo es más fácil si dominás los conceptos fundamentales. En Mumuki la tecnología es un medio, no un fin: no enseñamos lenguajes, sino a pensar computacionalmente."
+
+- title: En tu idioma
+  icon: language
+  delay: .2s
+  description: "Siempre es más fácil aprender cuando te hablan en tu idioma, y la programación no es la excepción. Mumuki es un proyecto concebido en Argentina, por eso todo su contenido está en español rioplatense."
+
+- title: Dentro y fuera del aula
+  description: "Siempre es más fácil aprender cuando te hablan en tu idioma, y la programación no es la excepción. Mumuki es un proyecto concebido en Argentina, por eso todo su contenido está en español rioplatense."
+  icon: university
+  delay: .3s
+  description: "El rol del docente es absolutamente irremplazable por un computadora. Por eso las herramientas de Mumuki buscan empoderar al docente y complementar a la educación presencial, no eliminarla."
