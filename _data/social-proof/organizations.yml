@@ -1,23 +1,8 @@
-- name: "Universidad Tecnológica Nacional - Facultad Regional Buenos Aires"
-  logo_url: https://www.frba.utn.edu.ar/wp-content/uploads/2016/06/logo.png
-
-- name: "Universidad Nacional de Quilmes"
-  logo_url: http://www.unq.edu.ar/images/logo_unqui.png
-
 - name: "Digital House"
   logo_url: http://mumuki.io/static/logo-digitalhouse.png
 
 - name: "Instituto Sagrado Corazón Al.Cal."
   logo_url: http://mumuki.io/static/logo-alcal.png
-
-- name: "Universidad Nacional de San Martín"
-  logo_url: http://www.unsam.edu.ar/img/logo-unsam.png
-
-- name: "Universidad Virtual de Quilmes"
-  logo_url: http://mumuki.io/static/logo-uvq.gif
-
-- name: "Universidad Nacional de Córdoba - Facultad de Matemática, Astronomía y Física"
-  logo_url: http://mumuki.io/static/logo-introalgo-unc.png
 
 - name: "Universidad Blas Pascal"
   logo_url: http://www.ubp.edu.ar/wp-content/themes/ubp/img/logo-ubp.png
