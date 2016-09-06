@@ -1,37 +1,15 @@
 <aside id="social-proof" class="bg-light">
     <div class="container text-center">
         <div class="call-to-action">
-            <h2>{{site.data.social-proof.they_proof_us}}</h2>
+            <h2>{{site.data.social-proof.text.they_proof_us}}</h2>
             <hr class="light">
             <div class="container">
               <div class="row">
-                <div class="col-lg-3 col-md-3 col-xs-6">
-                  <img src="https://www.frba.utn.edu.ar/wp-content/uploads/2016/06/logo.png" class="user-logo img-responsive center-block">
-                </div>
-                <div class="col-lg-3 col-md-3 col-xs-6">
-                  <img src="http://www.unq.edu.ar/images/logo_unqui.png" class="user-logo img-responsive center-block">
-                </div>
-                <div class="col-lg-3 col-md-3 col-xs-6">
-                  <img src="http://mumuki.io/static/logo-digitalhouse.png" class="user-logo img-responsive center-block">
-                </div>
-                <div class="col-lg-3 col-md-3 col-xs-6">
-                  <img src="http://mumuki.io/static/logo-alcal.png" class="user-logo img-responsive center-block">
-                </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="col-lg-3 col-md-3 col-xs-6">
-                  <img src="http://www.unsam.edu.ar/img/logo-unsam.png" class="user-logo img-responsive center-block">
-                </div>
-                <div class="col-lg-3 col-md-3 col-xs-6">
-                  <img src="http://mumuki.io/static/logo-uvq.gif" class="user-logo img-responsive center-block">
-                </div>
-                <div class="col-lg-3 col-md-3 col-xs-6">
-                  <img src="http://mumuki.io/static/logo-introalgo-unc.png" class="user-logo img-responsive center-block">
-                </div>
-                <div class="col-lg-3 col-md-3 col-xs-6">
-                  <img src="http://www.ubp.edu.ar/wp-content/themes/ubp/img/logo-ubp.png" class="user-logo img-responsive center-block">
-                </div>
+                {% for organization in site.data.social-proof.organizations %}
+                  <div class="col-lg-3 col-md-3 col-xs-6">
+                    <img src="{{organization.logo_url}}" class="user-logo img-responsive center-block" alt="{{organization.name}}" title="{{organization.name}}">
+                  </div>
+                {% endfor %}
               </div>
             </div>
         </div>
