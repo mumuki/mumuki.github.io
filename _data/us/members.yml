@@ -2,7 +2,7 @@
   github: aguspina
   linkedin: aguspina
   email: agus
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a posuere quam, et consequat tortor."
+  description: 
   image: /img/agus.jpg
   offset:  col-lg-offset-2 col-md-offset-2
 
@@ -10,19 +10,19 @@
   github: faloi
   linkedin: faloi
   email: fede
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a posuere quam, et consequat tortor.
+  description: 
   image: /img/faloi.jpg
 
 - name: Federico Scarpa
   github: fedescarpa
   linkedin: fedescarpa
   email: fedescarpa
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a posuere quam, et consequat tortor.
+  description: 
   image: /img/fedescarpa.jpg
 
 - name: Franco Bulgarelli
   github: flbulgarelli
   linkedin: flbulgarelli
   email: franco
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a posuere quam, et consequat tortor.
+  description: 
   image: /img/franco.jpg
