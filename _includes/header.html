@@ -4,7 +4,7 @@
         <div class="header-content-inner">
             <h1> mumuki</h1>
             <hr>
-            <p>{{site.data.header.about_us || markdownify}}</p>
+            <p>{{site.data.header.about_us | markdownify}}</p>
             <a href="http://mumuki.io" class="btn btn-primary btn-xl">{{site.data.header.try_it}}</a>
         </div>
     </div>
