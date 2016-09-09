@@ -14,7 +14,7 @@
                 <img src="img/screenshots/{{photo.name}}.png" alt="">
                 <div class="carousel-caption">
                   <h3>{{photo.title}}</h3>
-                  <p>{{photo.description}}</p>
+                  <p>{{photo.description | markdownify}}</p>
                 </div>
               </div>
             {% endfor %}

@@ -1,11 +1,19 @@
-- title: Corrección automática!
-  name: success
-  description: Podes obtener una correción instantánea de la solución que intentaste!
+- title: Todo en un mismo lugar
+  name: gobstones-exercise
+  description: Tanto la consigna como el editor de código se encuentran en la misma pantalla, concentrando en un sólo lugar todo lo necesario para resolver cada ejercicio.
 
-- title: Corrección automática!
-  name: error
-  description: jeje
+- title: Corrección automatizada
+  name: haskell-ups
+  description: El estudiante obtiene instantáneamente una devolución automática de su programa, que verifica que el resultado sea correcto y que haya utilizado las herramientas adecuadas.
 
-- title: Corrección automática!
-  name: finish
-  description: jiji
+- title: Seguimiento personalizado
+  name: classroom-students
+  description: Mediante la herramienta de aula virtual, el docente puede seguir el progreso de sus estudiantes y realizar un seguimiento personalizado.
+
+- title: No sólo el resultado, también importa el proceso
+  name: classroom-student-detail
+  description: Todo intento de los estudiantes queda registrado y a disposición del docente, para poder hacer un análisis del proceso de aprendizaje.
+
+- title: Contenido personalizable
+  name: editor
+  description: Nuestro contenido fue desarrollado bajo los términos de la [Licencia Creative Commons Compartir-Igual, 4.0](https://creativecommons.org/licenses/by-sa/4.0/) y por lo tanto puede ser modificado y mejorado por la comunidad.
