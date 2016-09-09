@@ -1,19 +1,23 @@
 - title: "Mumuki, para aprender programación"
   image: educar.jpg
   link: http://www.educ.ar/sitios/educar/blogs/ver?referente=docentes&id=130862
-  description: "Hoy en día se dice que saber programar es como saber leer y escribir. Con el auge de las TIC y con las nuevas competencias que demanda la sociedad actual, se ha ido incorporando en las escuelas la enseñanza de las ciencias de la computación."
+  date: 2016-05-27
+  publisher: Educ.AR
 
 - title: "Mumuki: nueva herramienta para aprender y enseñar a programar"
   image: programar.png
   link: http://program.ar/mumuki-aprender-y-ensenar-a-programar/
-  description: "A través de esta novedosa propuesta, los docentes pueden hacer un seguimiento personalizado y tener una forma de definir ejercicios sencillos de programación con evaluación automática. ¡Probala hoy!"
+  date: 2016-04-13
+  publisher: Program.AR
 
 - title: "Enseñar a programar es más fácil con Mumuki"
   image: utngraduados.jpeg
   link: http://www.clubdelgraduado.com/contenido/noticias/130
-  description: "Mumuki es una plataforma libre y gratuita para aprender y enseñar a programar. Es además, un emprendimiento que crearon cuatro amigos, tres de los cuales pertenecen a la comunidad uteniana. "
+  date: 2016-08-01
+  publisher: Club del Graduado Tecnológico
 
-- title: "Mumuki, para aprender programación"
+- title: "Aprendé a programar con Mumuki, una aplicación desarrollada por argentinos"
   image: conectar.jpg
-  link: http://www.educ.ar/sitios/educar/blogs/ver?referente=docentes&id=130862
-  description: "Esta plataforma propone guías de ejercicios didácticos e interactivos sobre distintos temas y niveles de programación para que resuelvan los estudiantes. "
+  link: http://www.conectarigualdad.gob.ar/noticia/aprende-a-programar-con-mumuki-una-aplicacion-desarrollada-por-argentinos-3181
+  date: 2016-06-10
+  publisher: Conectar Igualdad
