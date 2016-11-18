@@ -1,0 +1,11 @@
+title: Mumuki Platform Documentation
+description: Documentation of the Mumuki Platform
+github_username: mumuki
+
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
