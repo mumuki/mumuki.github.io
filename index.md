@@ -14,15 +14,33 @@ La Plataforma Mumuki
 
 La misma presenta una arquitectura híbrida que combina microservicios, aplicaciones de línea de comando y bibliotecas reutilizables, libres y de código abierto, desarrolladas principalmente utilizando los lenguajes Ruby, JavaScript y Haskell. 
 
-La Plataforma Mumuki es desarrollada por el [Proyecto Mumuki](http://www.mumuki.org/) y una comunidad docente y programadora, y podés verla funcionando, por ejemplo, en [Academia Mumuki](http://mumuki.academy), un sitio (totalmente funcional) de demostración de sus capactidades. 
+La Plataforma Mumuki es desarrollada por el [Proyecto Mumuki](http://www.mumuki.org/) y una comunidad docente y programadora, y podés verla funcionando, por ejemplo, en [Academia Mumuki](http://mumuki.academy), un sitio (totalmente funcional) de demostración de sus capacidades. 
 
-Todo el código (incluida esta misma documentación) se encuentra bajo la organización Github [Mumuki](https://github.com/mumuki), distribuido bajo licencias libres [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html) y MIT. Por otro lado, el contenido, también libre y distribuido bajo licencia [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/), se encuentra distribuido a lo largo de varias organizaciones Github, como [MumukiProject](https://github.com/MumukiProject), [sagrado-corazon-alcal](https://github.com/sagrado-corazon-alcal/), [pdep-utn](https://github.com/pdep-utn), entre otras. 
-
-Finalmente, esta documentación, al igual que la Plataforma Mumuki y el Proyecto Mumuki, se encuentra en continuo crecimiento. Es probable que encuentres errores y omisiones; en tal caso no dudes en comunicarte con nosotros a través de nuestra cuenta info@mumuki.org, de nuestro grupo devs@mumuki.org, o de nuestra cuenta en Facebook 
-
+* [Licencias](#licencias)
+* [Reportando errores](#reportando-errores)
 * [Arquitectura](#arquitectura) 
 * [Componentes principales](#componentes-principales)
+   * Biblioteca
+   * Ateneo
+   * Aula Virtual
+   * Mulang
+   * Escualo
+   * Runners
+   * Bibliotecas
 * [Comenzando a desarrollar](#comenzando-a-desarrollar)
+* Desplegando la plataforma
+
+## Licencias
+
+Todo el código (incluida esta misma documentación) se encuentra bajo la organización Github [Mumuki](https://github.com/mumuki), distribuido bajo licencias libres [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html) y MIT.
+
+Por otro lado, el contenido, también libre y distribuido bajo licencia [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/), se encuentra distribuido a lo largo de varias organizaciones Github, como [MumukiProject](https://github.com/MumukiProject), [sagrado-corazon-alcal](https://github.com/sagrado-corazon-alcal/), [pdep-utn](https://github.com/pdep-utn), entre otras. 
+
+## Reportando errores
+
+Finalmente, esta documentación, al igual que la Plataforma Mumuki y el Proyecto Mumuki, se encuentra en continuo crecimiento. 
+
+Es probable que encuentres errores y omisiones; en tal caso no dudes en comunicarte con nosotros a través de nuestra cuenta info@mumuki.org, de nuestro grupo devs@mumuki.org, o de [nuestra cuenta](https://www.facebook.com/MumukiProject) en Facebook 
 
 ## Arquitectura
 
@@ -195,3 +213,14 @@ Todo muy lindo, ¿pero cómo empiezo a desarrollar? Hay dos caminos:
 
 1. El fácil: utilizando [mumuki-development-installer](https://github.com/mumuki/mumuki-development-installer)
 2. El difícil: siguiente los pasos de instalación de cada componente
+
+### Development Installer
+
+:warning: TODO
+
+### Instalación Manual
+
+:warning: TODO
+
+
+
