@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+![](http://mumuki.io/logo-alt-large.png)
 
 La Plataforma Mumuki
 ====================
