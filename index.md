@@ -112,7 +112,9 @@ bibliotheca-.up->runners
 
 ### Biblioteca (`bibliotheca`)
 
-> https://github.com/mumuki/mumuki-bibliotheca
+> [https://github.com/mumuki/mumuki-bibliotheca](https://github.com/mumuki/mumuki-bibliotheca)
+> [https://github.com/mumuki/mumuki-editor](https://github.com/mumuki/mumuki-editor)
+
 
 Es un servidor HTTP escrito en Ruby. Utiliza como motor de persistencia una base de datos Mongo. La sincronización con un repositorio GIT es opcional, configurable mediante variables de entorno. Expone sus operaciones mediante un API REST.
 
@@ -120,17 +122,27 @@ La interfaz grafíca de la biblioteca (Editor) es una aplicación de cliente pes
 
 ### Ateneo (`atheneum`)
 
+> [https://github.com/mumuki/mumuki-atheneum](https://github.com/mumuki/mumuki-atheneum)
+
+
 Es el servicio más visible: una plataforma web de autoestudio que presenta al estudiante ejercicios para que resuelva, y corrige automáticamente utilizando runners. Está desarrollada en Ruby, utilizando [el framework Rails](http://rubyonrails.org/). 
 
 ### Aula virtual (`classroom`)
+
+> [https://github.com/mumuki/mumuki-classroom-api](https://github.com/mumuki/mumuki-classroom-api)
+> [https://github.com/mumuki/mumuki-classroom](https://github.com/mumuki/mumuki-clasroom)
 
 :warning: TODO
 
 ### Analizador de código (`mulang`)
 
+> [https://github.com/mumuki/mulang](https://github.com/mumuki/mulang)
+
 A diferencia de los componentes anteriores, mulang, es un **ejecutable** y está **desarrollada en Haskell**.
 
 ### Provisionador (`escualo`)
+
+> [https://github.com/mumuki/escualo.rb](https://github.com/mumuki/escualo.rb)
 
 :warning: TODO
 
@@ -150,7 +162,7 @@ Sí, sabemos que estamos yendo abiertamente en contra éste principio. ¿Entonce
 
 Todas nuestras bibliotecas (gemas de ruby, todas publicadas en rubygems siguiendo estricto versionado semántico) tienen el prefijo `mumukit` (juego de palabras entre mumuki y kit, un guiño a octokit)
 
-* mumukit: la “biblioteca” original. Para ser justos, se trata de un framework, pensado para implementar runners de forma muy fácil (y cuando decimos muy fácil, queremos decir que dar soporte a un lenguaje nuevo es tarea de un día de trabajo)
+* mumukit: la _biblioteca original_. Para ser justos, se trata de un framework, pensado para implementar runners de forma muy fácil (y cuando decimos muy fácil, queremos decir que dar soporte a un lenguaje nuevo es tarea de un día de trabajo)
 * mumukit-core: extensiones a active-support, que en tanto son extensiones al lenguaje ruby. 
 * mumukit-nuntius: manejo de colas de mensajes RabbitMQ, de forma que sea muy fácil para cualquier servicio enviar mensajes asincrónicos y confiables a otros servicios. 
 * mumukit-bridge: manejo de comunicación hacia los runners via HTTP. A diferencia de los mensajes que se envían a través de nuntius, los mensajes que se intercambian con los runners son sincrónicos y no confiables. 
