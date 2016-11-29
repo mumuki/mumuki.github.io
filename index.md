@@ -5,7 +5,7 @@ layout: default
 La Plataforma Mumuki
 ====================
 
-La Plataforma Mumuki es un ecosistema web de herramientas educativas que permite
+¡Hola! Esta es la documentación de la Plataforma Mumuki: un un ecosistema web de herramientas educativas que permite
 
 * aprender mediante explicaciones interactivas y resolución de ejercicios de complejidad incremental
 * editar contenido el didáctico, estructurado en términos de libros, capítulos, lecciones y ejercicios 
@@ -13,13 +13,20 @@ La Plataforma Mumuki es un ecosistema web de herramientas educativas que permite
 
 La misma presenta una arquitectura híbrida que combina microservicios, aplicaciones de línea de comando y bibliotecas reutilizables, libres y de código abierto, desarrolladas principalmente utilizando los lenguajes Ruby, JavaScript y Haskell. 
 
+La Plataforma Mumuki es desarrollada por el [Proyecto Mumuki](http://www.mumuki.org/) y una comunidad docente y programadora, y podés verla funcionando, por ejemplo, en [Academia Mumuki](http://mumuki.academy), un sitio (totalmente funcional) de demostración de sus capactidades. 
+
+Todo el código (incluida esta misma documentación) se encuentra bajo la organización Github [Mumuki](https://github.com/mumuki), distribuido bajo licencias libres [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html) y MIT. Por otro lado, el contenido, también libre y distribuido bajo licencia [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/), se encuentra distribuido a lo largo de varias organizaciones Github, como [MumukiProject](https://github.com/MumukiProject), [sagrado-corazon-alcal](https://github.com/sagrado-corazon-alcal/), [pdep-utn](https://github.com/pdep-utn), entre otras. 
+
+Finalmente, esta documentación, al igual que la Plataforma Mumuki y el Proyecto Mumuki, se encuentra en continuo crecimiento. Es probable que encuentres errores y omisiones; en tal caso no dudes en comunicarte con nosotros a través de nuestra cuenta info@mumuki.org, de nuestro grupo devs@mumuki.org, o de nuestra cuenta en Facebook 
+
+
 ## Arquitectura
 
 La plataforma Mumuki consta de tres servicios principales:
 
- * Biblioteca (`mumuki-bibliotheca`): es un repositorio _headless_ de contenido didáctico (guías, ejercicios, capiítulos, libros), capaz de replicar dichos contenidos en repositorios GIT. Cuenta con una interfaz gráfica llamada Editor (mumuki-editor) que permite a un docente generar y mantener el contenido
- * Ateneo (`mumuki-atheneum`): es una aplicación web de _code-assesment_ que permite a un estudiante acceder a explicaciones y ejercicios, e interactuar con ellos a través del envío de soluciones a problemas
- * Aula virtual (`mumuki-classroom`): es una aplicación web de seguimiento de estudiantes que permite a los docentes de un curso navegar las soluciones de sus estudiantes, obtener estadísticas y proveer feedback manual.
+ * [Biblioteca](https://github.com/mumuki/mumuki-bibliotheca) (`mumuki-bibliotheca`): es un repositorio _headless_ de contenido didáctico (guías, ejercicios, capiítulos, libros), capaz de replicar dichos contenidos en repositorios GIT. Cuenta con una interfaz gráfica llamada Editor (mumuki-editor) que permite a un docente generar y mantener el contenido
+ * [Ateneo](https://github.com/mumuki/mumuki-atheneum) (`mumuki-atheneum`): es una aplicación web de _code-assesment_ que permite a un estudiante acceder a explicaciones y ejercicios, e interactuar con ellos a través del envío de soluciones a problemas
+ * [Aula virtual](https://github.com/mumuki/mumuki-classroom-api) (`mumuki-classroom`): es una aplicación web de seguimiento de estudiantes que permite a los docentes de un curso navegar las soluciones de sus estudiantes, obtener estadísticas y proveer feedback manual.
 
 Estos tres componentes interactuan entre sí a través de tres medios de comunicación:
 
@@ -29,8 +36,8 @@ Estos tres componentes interactuan entre sí a través de tres medios de comunic
  
 Además, la plataforma cuenta con dos ejecutables de línea de comando (CLI): 
 
-* Mulang: realiza el análisis de código
-* Escualo: posibilita la configuración, instalación y despliegue de la plataforma. 
+* [Mulang](https://github.com/mumuki/mulang): realiza el análisis de código
+* [Escualo](https://github.com/mumuki/escualo.rb): posibilita la configuración, instalación y despliegue de la plataforma. 
  
 Y todo esto se apoya en: 
 
@@ -113,7 +120,7 @@ La interfaz grafíca de la biblioteca (Editor) es una aplicación de cliente pes
 
 ### Ateneo (`atheneum`)
 
-:warning: TODO
+Es el servicio más visible: una plataforma web de autoestudio que presenta al estudiante ejercicios para que resuelva, y corrige automáticamente utilizando runners. Está desarrollada en Ruby, utilizando [el framework Rails](http://rubyonrails.org/). 
 
 ### Aula virtual (`classroom`)
 
@@ -149,5 +156,20 @@ Todas nuestras bibliotecas (gemas de ruby, todas publicadas en rubygems siguiend
 * mumukit-bridge: manejo de comunicación hacia los runners via HTTP. A diferencia de los mensajes que se envían a través de nuntius, los mensajes que se intercambian con los runners son sincrónicos y no confiables. 
 * mumukit-inspection
 * mumukit-directives
-* mumukit-content-type
+* mumukit-content-type 
+
+## Runners
+
+Los runners son componentes que capaces de ejecutar y probar porciones de código en un cierto lenguaje. 
+
+* Son componentes 100% stateless. 
+* Por motivos de seguridad, la mayoría de ellos ejecutan el código del usuario dentro de un sandbox, creado mediante un contenedor Docker instanciado ante demanda. 
+* Exponen sus funcionalidades mediante HTTP
+* Exponente tres _endpoints_ principales: 
+   * `/test`: permite probar el código, lo cual normalmente involucra los siguientes pasos: 
+      * ejecutar pruebas unitarias 
+      * disparar el análisis de código (típicamente, mediante Mulang)
+      * Proveer feedback (esto es, analizar los resultados del compilador/intérprete del lenguaje y proveer al usuario una descripción más amena del error e indicios de solución)
+   * `/query`: permite ejecutar consultas, de forma similar a cómo lo hace un intérprete interactivo
+   * `/info`: provee información introspectiva sobre el runner: su versión, información de ambiente, versiones del lenguaje y framework de test que ejecuta, íconos, editores ACE recomendados, etc. 
 
