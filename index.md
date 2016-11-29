@@ -20,6 +20,9 @@ Todo el código (incluida esta misma documentación) se encuentra bajo la organi
 
 Finalmente, esta documentación, al igual que la Plataforma Mumuki y el Proyecto Mumuki, se encuentra en continuo crecimiento. Es probable que encuentres errores y omisiones; en tal caso no dudes en comunicarte con nosotros a través de nuestra cuenta info@mumuki.org, de nuestro grupo devs@mumuki.org, o de nuestra cuenta en Facebook 
 
+* [Arquitectura](#arquitectura) 
+* [Componentes principales](#componentes-principales)
+* [Comenzando a desarrollar](#comenzando-a-desarrollar)
 
 ## Arquitectura
 
@@ -109,7 +112,7 @@ bibliotheca-.up->runners
 
 <img src="http://www.plantuml.com/plantuml/img/TP5DZiCW38NtFeKlu1vXjdE8KHScq0GfWGgCkklPnvhmbqgJHOmV_km7S1B_u4MGPNF1bGEuASQRtKUL5nxYidFEASO3mBAmuUmwQWt-08vEY3VzD3nZbZKvk4_GrBroypn48jB_4SCQBrmtKAbXw7yciJ5U_ihFvLbB7q6HvXrfTm-XwMWmsKDAVjrq-t88w5QGPfi0CqislW9L6wtzHUmebMVJOBo0irvY0ZZZISvNftmi5h-zRCLSHkFxtUNUBfKGNCggBDeEinJhWjHC72-RIpLx9I-QVBXkHAsbyI1dFL5pFC2RdkohJPulPzxu1G00">
 
-## Componetes principales
+## Componentes principales
 
 ### Biblioteca (`bibliotheca`)
 
@@ -186,3 +189,9 @@ Los runners son componentes que capaces de ejecutar y probar porciones de códig
    * `/query`: permite ejecutar consultas, de forma similar a cómo lo hace un intérprete interactivo
    * `/info`: provee información introspectiva sobre el runner: su versión, información de ambiente, versiones del lenguaje y framework de test que ejecuta, íconos, editores ACE recomendados, etc. 
 
+## Comenzando a desarrollar
+
+Todo muy lindo, ¿pero cómo empiezo a desarrollar? Hay dos caminos: 
+
+1. El fácil: utilizando [mumuki-development-installer](https://github.com/mumuki/mumuki-development-installer)
+2. El difícil: siguiente los pasos de instalación de cada componente
