@@ -6,11 +6,11 @@ layout: default
 La Plataforma Mumuki
 ====================
 
-¡Hola! Esta es la documentación de la Plataforma Mumuki: un un ecosistema web de herramientas educativas que permite
+¡Hola! Esta es la documentación de la Plataforma Mumuki: un ecosistema web de herramientas educativas que permite
 
 * aprender mediante explicaciones interactivas y resolución de ejercicios de complejidad incremental
-* editar contenido el didáctico, estructurado en términos de libros, capítulos, lecciones y ejercicios 
-* realizar seguimiento de los estudiantes, en el contexto de un curso presencial, semipresencial o virtual
+* editar contenido didáctico, estructurado en términos de libros, capítulos, lecciones y ejercicios 
+* realizar seguimiento de estudiantes, en el contexto de un curso presencial, semipresencial o virtual
 
 La misma presenta una arquitectura híbrida que combina microservicios, aplicaciones de línea de comando y bibliotecas reutilizables, libres y de código abierto, desarrolladas principalmente utilizando los lenguajes Ruby, JavaScript y Haskell. 
 
@@ -20,15 +20,9 @@ La Plataforma Mumuki es desarrollada por el [Proyecto Mumuki](http://www.mumuki.
 * [Reportando errores](#reportando-errores)
 * [Arquitectura](#arquitectura) 
 * [Componentes principales](#componentes-principales)
-   * Biblioteca
-   * Ateneo
-   * Aula Virtual
-   * Mulang
-   * Escualo
-   * Runners
-   * Bibliotecas
 * [Comenzando a desarrollar](#comenzando-a-desarrollar)
-* Desplegando la plataforma
+* [Requerimientos Mínimos](#requerimientos-mínimos)
+* [Desplegando la plataforma](#deplegando-la-plataforma)
 
 ## Licencias
 
@@ -212,7 +206,7 @@ Los runners son componentes que capaces de ejecutar y probar porciones de códig
 Todo muy lindo, ¿pero cómo empiezo a desarrollar? Hay dos caminos: 
 
 1. El fácil: utilizando [mumuki-development-installer](https://github.com/mumuki/mumuki-development-installer)
-2. El difícil: siguiente los pasos de instalación de cada componente
+2. El difícil: siguiendo los pasos de instalación de cada componente
 
 ### Development Installer
 
@@ -222,5 +216,10 @@ Todo muy lindo, ¿pero cómo empiezo a desarrollar? Hay dos caminos:
 
 :warning: TODO
 
+## Requerimientos Mínimos
 
+:warning: TODO
 
+## Desplegando la plataforma
+
+:warning: TODO
