@@ -23,6 +23,7 @@ La Plataforma Mumuki es desarrollada por el [Proyecto Mumuki](http://www.mumuki.
 * [Comenzando a desarrollar](#comenzando-a-desarrollar)
 * [Requerimientos Mínimos](#requerimientos-mnimos)
 * [Desplegando la plataforma](#desplegando-la-plataforma)
+* [Contribuyendo](#contribuyedo)
 
 ## Licencias
 
@@ -223,3 +224,26 @@ Todo muy lindo, ¿pero cómo empiezo a desarrollar? Hay dos caminos:
 ## Desplegando la plataforma
 
 :warning: TODO
+
+## Contribuyendo
+
+Para contribuir al desarrollo de la Plataforma Mumuki sólo necesitás una cuenta en Github y las ganas de aun yudarnos. No importa si sos una programadora Ruby, un diseñador Web o un docente que tiene propuestas de mejoras: todo suma. 
+
+Hay dos formas fundamentales de colaborar: subiendo pedidos de cambios y mejoras (_issues_), o haciendo _commits_. 
+
+## Subiendo _issues_
+
+:warning: TODO
+
+## _Commit_eando 
+
+El proceso para contribur con aportes de código es simple: 
+
+* Forkea el proyecto desde Github (usando el botón Fork que está en la esquina superior derecha) y clonalo en tu computadora de trabajo
+* Creá un branch por tema (feature branch) (git checkout -b my-new-feature)
+* Comiteá tus cambios your changes `git commit -am 'Add some feature'`
+* Hacé push al branch (git push origin my-new-feature)
+* Hacé un nuevo Pull Request, desde el branch en tu fork hacia master en el repositorio de mumuki. 
+
+La idea de trabajar con Pull Requests es que sea fácil que cualquiera pueda proponer un cambio o mejora; si bien se pueden hacer PRs desde branches de los proyectos en la organización mumuki, eso implica tener que darle permisos especiales de collaborator a cada contribuidor, por cada repositorio, lo cual es lento, burocrático, y si no se tiene cuidado, un riesgo de seguridad. Por eso es que te pedimos hacer tu propio _fork_. 
+
