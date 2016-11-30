@@ -255,9 +255,15 @@ Hay dos formas fundamentales de colaborar: subiendo pedidos de cambios y mejoras
 
 ## Subiendo _issues_
 
-:warning: TODO
+Subir issues es fácil, aunque a veces puede no ser obvio en qué repositorio github subirlo: 
 
-## _Commit_eando 
+* Si es un _issue_ general sobre las herramientas docentes (ya sea el editor o el aula virtual), subilo a [mumuki/mumuki-teacher-tools](https://github.com/mumuki/mumuki-teacher-tools/blob/master/CONTRIBUTING.md)
+* Si es un _issue_ general sobre la plataforma, o particular de la herramienta de autoestudio, subilo a [mumuki/mumuki-atheneum](https://github.com/mumuki/mumuki-teacher-tools/blob/master/CONTRIBUTING.md). 
+* Si es un _issue_ sobre el contenido didáctico, subilo al repositorio correspondiente. Por ejemplo, si querés subir uno sobre (la lección de Mixins y Autoclases en Ruby)[http://mumuki.io/lessons/127-metaprogramacion-mixins-y-autoclases], hacelo [acá](https://github.com/MumukiProject/mumuki-guia-ruby-metaprogramacion-el-modelo-de-mixins).  
+
+¡Y prestá atención a las guías de contribución específicas de cada proyecto! Ya Github te las senñalará cuando subas un _issue_ :wink:
+
+## _Commiteando_ 
 
 El proceso para contribur con aportes de código es simple: 
 
