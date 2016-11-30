@@ -161,7 +161,29 @@ A diferencia de los componentes anteriores, mulang, es un **ejecutable** y está
 
 > [https://github.com/mumuki/escualo.rb](https://github.com/mumuki/escualo.rb)
 
-:warning: TODO
+`escualo` es una gema ruby que permite aprovisionar un host, de modo que se puedan instalar componentes de la plataforma en éste. Se instala mediante `gem install escualo` y se puede usar en dos modalidades: 
+
+* Configurando el host a mano, utilizando los varios comandos que ofrece la herramienta. Por ejemplo: 
+
+```
+OPTIONS='--host mi-maquina.mi-dominio.com'
+
+escualo bootstrap $OPTIONS
+escualo env set UNA_VARIABLE=un_valor $OPTIONS
+escualo plugin install mongo $OPTIONS
+escualo artifact create bibliotheca 80 $OPTIONS
+escualo deploy bibliotheca mumuki/mumuki-bibliotheca $OPTIONS
+```
+
+* Ejecutar un script, como [los que se encuentran acá](https://github.com/mumuki/mumuki-escualo-sample-scripts) mediante el comando: 
+
+```
+escualo script nombre_del_script.yml
+```
+
+Los scripts son configuraciones estandarizadas y reutilizables para desplegar un componente mumuki. Varios ejemplos de scripts, con las configuraciones más típicas, se pueden encontrar en el repositorio [https://github.com/mumuki/mumuki-escualo-sample-scripts](https://github.com/mumuki/mumuki-escualo-sample-scripts)  
+
+En cualquier caso, recomendamos que dar un vistazo al README (que muestra casos de uso comunes) y a `escualo --help`.
 
 ## Bibliotecas (gemas)
 
