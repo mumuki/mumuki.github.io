@@ -21,8 +21,8 @@ La Plataforma Mumuki es desarrollada por el [Proyecto Mumuki](http://www.mumuki.
 * [Arquitectura](#arquitectura) 
 * [Componentes principales](#componentes-principales)
 * [Comenzando a desarrollar](#comenzando-a-desarrollar)
-* [Requerimientos Mínimos](#requerimientos-mínimos)
-* [Desplegando la plataforma](#deplegando-la-plataforma)
+* [Requerimientos Mínimos](#requerimientos-mnimos)
+* [Desplegando la plataforma](#desplegando-la-plataforma)
 
 ## Licencias
 
