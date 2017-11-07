@@ -14,7 +14,7 @@ La Plataforma Mumuki
 
 La misma presenta una arquitectura híbrida que combina microservicios, aplicaciones de línea de comando y bibliotecas reutilizables, libres y de código abierto, desarrolladas principalmente utilizando los lenguajes Ruby, JavaScript y Haskell. 
 
-La Plataforma Mumuki es desarrollada por el [Proyecto Mumuki](http://www.mumuki.org/) y una comunidad docente y programadora, y podés verla funcionando, por ejemplo, en [Academia Mumuki](http://mumuki.academy), un sitio (totalmente funcional) de demostración de sus capacidades. 
+La Plataforma Mumuki es desarrollada por el [Proyecto Mumuki](http://www.mumuki.org/) y una comunidad docente y programadora, y podés verla funcionando, por ejemplo, en [Academia Mumuki](http://mumuki.io), un sitio (totalmente funcional) de demostración de sus capacidades. 
 
 * [Licencias](#licencias)
 * [Reportando errores](#reportando-errores)
