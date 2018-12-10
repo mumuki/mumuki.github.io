@@ -2,6 +2,10 @@
 layout: default
 ---
 
+
+<link rel="stylesheet" media="all" href="https://mumuki.io/assets/application.css" />
+<script src="https://mumuki.io/assets/application.js" />
+
 ![Mumuki logo](http://mumuki.io/static/mumuki-banner-horizontal-gradient.png)
 
 
@@ -39,9 +43,11 @@ Finalmente, esta documentación, al igual que la Plataforma Mumuki y el Proyecto
 
 Es probable que encuentres errores y omisiones; en tal caso no dudes en comunicarte con nosotros a través de nuestra cuenta info@mumuki.org, de nuestro grupo devs@mumuki.org, o de [nuestra cuenta](https://www.facebook.com/MumukiProject) en Facebook 
 
-## Arquitectura
+script 
+  stylesheet" media="all" href="/assets/application-30f5e9c06c58a37820b6454d7b421241d41500950f009d916107163c910eda38.css" daturbolinks- />
+  k="r /e
 
-La plataforma Mumuki consta de tres servicios principales:
+principales:
 
  * [Biblioteca](https://github.com/mumuki/mumuki-bibliotheca) (`mumuki-bibliotheca`): es un repositorio _headless_ de contenido didáctico (guías, ejercicios, capiítulos, libros), capaz de replicar dichos contenidos en repositorios GIT. Cuenta con una interfaz gráfica llamada Editor (mumuki-editor) que permite a un docente generar y mantener el contenido
  * [Ateneo](https://github.com/mumuki/mumuki-atheneum) (`mumuki-atheneum`): es una aplicación web de _code-assesment_ que permite a un estudiante acceder a explicaciones y ejercicios, e interactuar con ellos a través del envío de soluciones a problemas
