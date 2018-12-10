@@ -1,20 +1,22 @@
 ---
 layout: default
 ---
-![](http://mumuki.io/logo-alt-large.png)
 
-La Plataforma Mumuki
-====================
+![Mumuki logo](http://mumuki.io/static/mumuki-banner-horizontal-gradient.png)
 
-¡Hola! Esta es la documentación de la Plataforma Mumuki: un ecosistema web de herramientas educativas que permite
 
-* aprender mediante explicaciones interactivas y resolución de ejercicios de complejidad incremental
-* editar contenido didáctico, estructurado en términos de libros, capítulos, lecciones y ejercicios 
-* realizar seguimiento de estudiantes, en el contexto de un curso presencial, semipresencial o virtual
+Los Componentes Mumuki
+=======================
 
-La misma presenta una arquitectura híbrida que combina microservicios, aplicaciones de línea de comando y bibliotecas reutilizables, libres y de código abierto, desarrolladas principalmente utilizando los lenguajes Ruby, JavaScript y Haskell. 
+¡Hola! Esta es la documentación de los _Componentes Mumuki_, un ecosistema de componentes de software libre diseñado para construir herramientas educativas basadas en tres principios:
 
-La Plataforma Mumuki es desarrollada por el [Proyecto Mumuki](http://www.mumuki.org/) y una comunidad docente y programadora, y podés verla funcionando, por ejemplo, en [Academia Mumuki](http://mumuki.io), un sitio (totalmente funcional) de demostración de sus capacidades. 
+* aprendizaje y práctica mediante explicaciones interactivas y resolución de ejercicios de complejidad incremental;
+* generazión de contenido didáctico, estructurado en términos de libros, capítulos, lecciones y ejercicios;
+* seguimiento de estudiantes, en contextos de cursos presenciales, semipresencial o virtuales
+
+El mismo presenta una arquitectura híbrida en torno a bibliotecas, aplicaciones HTTP y frameworks para el lenguaje Ruby. Además tiene excepcional soporte para ejercicios de programación y pensamiento computacional, al posibilitar la ejecución y evaluación de código, provisto en parte por la herramienta [Mulang](https://github.com/mumuki/mulang), desarrollada en Haskell.
+
+Los componentes son desarrollados por el [Proyecto Mumuki](http://www.mumuki.org/) y una comunidad docente y programadora, y son la base de la [Plataforma Mumuki](http://mumuki.io). 
 
 * [Licencias](#licencias)
 * [Reportando errores](#reportando-errores)
