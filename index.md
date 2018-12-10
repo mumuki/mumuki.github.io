@@ -3,9 +3,9 @@ layout: default
 ---
 
 
-<link rel="stylesheet" media="all" href="https://mumuki.io/assets/application.css"/>
-<script src="https://mumuki.io/assets/application.js"></script>
-
+  <link rel="stylesheet" media="all" href="/assets/application-30f5e9c06c58a37820b6454d7b421241d41500950f009d916107163c910eda38.css" data-turbolinks-track="reload"/>
+  <script src="/assets/application-9049386999cbb7a2aedf35f7d6a3b651723f11f82d92ff23e209d5195b99a61b.js" data-turbolinks-track="reload"></script>
+  
 ![Mumuki logo](http://mumuki.io/static/mumuki-banner-horizontal-gradient.png)
 
 
