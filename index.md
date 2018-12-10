@@ -3,8 +3,8 @@ layout: default
 ---
 
 
-<link rel="stylesheet" media="all" href="https://mumuki.io/assets/application.css" />
-<script src="https://mumuki.io/assets/application.js" />
+<link rel="stylesheet" media="all" href="https://mumuki.io/assets/application.css"/>
+<script src="https://mumuki.io/assets/application.js"></script>
 
 ![Mumuki logo](http://mumuki.io/static/mumuki-banner-horizontal-gradient.png)
 
