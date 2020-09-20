@@ -59,6 +59,7 @@ Y todo esto se apoya en:
 * [Mulang](https://github.com/mumuki/mulang), un ejecutable de línea de comando que permite realizar el análisis de código.
 
 <!--@startuml
+@startuml
 artifact Laboratory
 artifact Bibliotheca
 artifact Classroom
@@ -69,6 +70,8 @@ database LaboratoryDB [
   Users
   ....
   Progress
+  ....
+  Forum Messages
   ....
   Organizations
 
@@ -110,22 +113,51 @@ cloud Github
 
 Bibliotheca <-.> Github
 
-artifact Runners
+note right of Github
+Used for free,
+Creative Commons
+content mirroring
+end note
+
+artifact "Code Runners" as Runners
+note left of Runners
+Ecosystem of independent
+container-based,
+code evaluation
+microservices
+end note
+
 
 actor Student
+actor Mentor
+actor Moderator
 actor Teacher
 actor Writer
 
-Laboratory-down-Student
+Laboratory-up-Student
+Laboratory-up-Moderator
+Laboratory-up-Mentor
+
 Teacher-Classroom
 Writer--Bibliotheca
+
+interface "Classroom\nAPIs" as ClassroomAPI
+note left of ClassroomAPI
+Endpoints for
+massive courses creation
+and integration
+with LMS
+end note
+
+Classroom-down->ClassroomAPI
 
 
 Laboratory-.>Runners
 @enduml
+@enduml
 -->
 
-<img src="http://www.plantuml.com/plantuml/png/VPBFJiCm3CRlVegyGFO424tT41o6s1yG1yGXRRqsKXU3xO3WwKb5ksH2efVqS_spFwTUYZhMU1eW7Vxe6ZKRLnCx9VxAiShNWoVjiN4vk1gS21ET05gdhdQ21Rokp0iOioNHZl6msoInI4ywdWHPijmofGmf8W_SkU2_dNeAOem1UCqzIZF_D5bHK0nQajdnnDrJw6XTPUZEo-Yzh19PKCOgxn4ZchshQwyZFRtct9kFr4-otet0MQSA-NAC7V2ezkAwe9ZBMFPTh_PoLZZxDxQS1Q1aRKkVmKxcSeCod0lP-3R7e1aejkRMQnzhk71pPHVNyuVy__Sn16G1I8BO73Is67HIZ-YQ7dbIp-mrYJzsPcRAjdcbVWbhoyqh-UHexh_4qAOD_W40">
+<img src="http://www.plantuml.com/plantuml/png/VLFDZjiy3BphAOYSF-K9FWJRPDCV846pJOiUsXvact44s69AILbidxvK_2FvqbmYZiGPSaW_-M0unBvJycSlfWvmC1Mn2SHl6TlQghCKhbYR3EuwupqJzKer9fZAU2oIdxVmGm6So8UMyVnoa60jF_dxvf5z3azCyi8No7lYsCDHCDDYWN_crZZxnmHBpYlrAmkN5Vv3UKSke0jbPcvZp3kIQ-bvcvC-MfyQAbaYU_I9vNV4YF35L9KDANiyvhVxk-Zv7B-aX3aMXkmOw0ulGIyyL4LVeDcsrw2NlQgvVj1bBqgLkRgXLwV7uh902MSY7MyJfkgEOWCVRBZ6Qi48_-lrPhvm510UvG5T9bJctC2562wC-1-e7QECxYwMKz-d2TR3EA2tpCJMjGfT0ubBvJLRxQWHYwDpo7u5na_dGLGyIvepkA_9l_c0VGAjQ_0cd2Bo43DMtkWqzaRggHCntaqN7ni5ghSraqU-snfzKOkIEeZX769Y6gEZ78cdGAZOvFWhclgAK_ITRP2WD5uidkYMQ6PQugES6fbr_le6TgtBZrHP9vZuXx2QN_vqxqwV1WjdJ925ZykRlMjk95G-ZL7rSfF6Lm_x3pNZmpXbnAaasF9evAii01oEvyB3cNVOkSr2HosyMM-cOJv9Vkoxlm00">
 
 ## Componentes principales
 
